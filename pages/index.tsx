@@ -2,23 +2,28 @@ import * as React from 'react'
 import { NextPage } from 'next'
 // import { siteMeta } from '../blog.config'
 import blogposts from '../posts/index'
-
-
+import LastBlogPosts from '../components/LastBlogPosts'
 
 const IndexPage: NextPage = () => {
   return (
-    <div className="centered">
-      <p>
-        <span className="redBackground">
-          Caleb Lawrence
-        </span>
-      </p>
-      <h1>I’m a full stack web developer.</h1>
-      {blogposts
-        .map((post: any) => (
-          <p>{post.title}</p>
-        ))}
+    <>
+    <div className="welcome">
+      <div className="centered">
+        <p>
+          <span className="redBackground">
+            Caleb Lawrence
+          </span>
+        </p>
+        <h1>I’m a full stack web developer.</h1>
+      </div>
+    </div>
+
+    <LastBlogPosts posts={blogposts} />
+        
       <style jsx>{`
+        .welcome {
+          height: 100vh;
+        }
         h1 {
           font-family: Georgia, serif;
           font-size: 2.3em;
@@ -37,14 +42,14 @@ const IndexPage: NextPage = () => {
           padding: 3px;
         }
         .centered {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            /* bring your own prefixes */
-            transform: translate(-50%, -50%);
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-right: -50%;
+          transform: translate(-50%, -50%) 
         }
       `}</style>
-    </div>
+    </>
   )
 }
 
