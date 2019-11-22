@@ -20,6 +20,8 @@ module.exports = files
     // eslint-disable-next-line no-eval
     const meta = eval('(' + match[1] + ')')
 
+    console.log('/posts/' + file.replace(/\.mdx?$/, ''))
+
     return {
       ...meta,
       path: '/posts/' + file.replace(/\.mdx?$/, ''),

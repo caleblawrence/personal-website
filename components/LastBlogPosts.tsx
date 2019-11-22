@@ -7,7 +7,7 @@ type Props = {
 }
 
 const LastBlogPosts: React.FunctionComponent<Props> = ({ posts }) => (
-    <div className="wrapper">
+    <div className="wrapper blog">
         <h1 className="sectionTitle">Blog.</h1>
         {posts.map(item => (
             <>
@@ -37,6 +37,10 @@ const LastBlogPosts: React.FunctionComponent<Props> = ({ posts }) => (
             .summary {
                 margin-top: 5px;
                 font-size: 1.2rem;
+            }
+
+            .blog {
+                height: 100vh;
             }
         `}</style>
     </div>
