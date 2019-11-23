@@ -1,47 +1,38 @@
 import Link from 'next/link'
 import { siteMeta } from '../../blog.config'
+import SyntaxHighlightStyles from '../syntax-highlight'
+import PublishedAt from '../utils/published-at'
+
 
 function BlogPost({ path, meta, children }) {
 
   return (
     <div>
+      <SyntaxHighlightStyles />
       <article className="h-entry">
         <header>
-          <h1 className="p-name">{meta.title}</h1>
+          <h1 className="p-name blogTitle">{meta.title}</h1>
 
           <div>
-            {/* <PublishedAt date={meta.publishedAt} link={path} /> */}
-
-            <Link href="/about">
-              <a
-                color="#aaa"
-                rel="author"
-                className="p-author h-card"
-                href="/about"
-              >
-                {siteMeta.author}
-              </a>
-            </Link>
+            <PublishedAt date={meta.publishedAt} link={path} />
           </div>
         </header>
         <div className="e-content">{children}</div>
       </article>
       <style jsx>{`
-        header {
-          margin-bottom: 2em;
-        }
-        [rel='author'] {
-          margin-left: 1em;
-        }
         article {
           margin-bottom: 2em;
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 42rem;
+          padding: 2.625rem 1.3125rem;
         }
-        footer {
-          margin-top: 2em;
+        code {
+          color: white !important;
         }
-        .post-pagination {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
+        .blogTitle {
+          font-family: Helvetca, Arial, sans-serif;
+          font-size: 3rem;
         }
       `}</style>
     </div>

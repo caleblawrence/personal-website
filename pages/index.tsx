@@ -27,6 +27,9 @@ const IndexPage: NextPage = () => {
 
 
       <style jsx global>{`
+        body {
+          font-family: normal 16px/1.9em "Inter", "Source Sans Pro","Helvetica Neue", Arial, sans-serif;
+        }
         .sectionTitle {
           font-size: 7rem;
           font-family: Helvetca, Arial, sans-serif;
