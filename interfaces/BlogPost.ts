@@ -4,4 +4,5 @@ export type BlogPost = {
     title: string
     summary: string
     image: string
+    path: string
   }
