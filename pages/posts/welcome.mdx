@@ -21,8 +21,14 @@ You&rsquo;ll find this post in your `page/posts` directory. To add new posts, ad
 
 After you personalize your blog you can deploy it to Now.
 
-```bash
-$ now
+```javascript
+export const meta = {
+  published: true,
+  publishedAt: '2018-05-20',
+  title: 'welcome',
+  summary: 'Welcome to your new blog built with Next.js',
+  image: '/static/site-feature.png',
+}
 ```
 
 Then, you will see your blog online in a URL like https://nextjs-blog-starter.now.sh

@@ -1,11 +1,14 @@
-import Link from 'next/link'
-import { siteMeta } from '../../blog.config'
 import SyntaxHighlightStyles from '../syntax-highlight'
-import PublishedAt from '../utils/published-at'
+import { parse, format } from 'date-fns'
+import { BlogPost } from '../../interfaces/BlogPost'
 
 
-function BlogPost({ path, meta, children }) {
+type Props = {
+  meta: BlogPost;
+  children: string;
+}
 
+const Post: React.FunctionComponent<Props> = ({ meta, children }) => {
   return (
     <div>
       <SyntaxHighlightStyles />
@@ -14,7 +17,9 @@ function BlogPost({ path, meta, children }) {
           <h1 className="p-name blogTitle">{meta.title}</h1>
 
           <div>
-            <PublishedAt date={meta.publishedAt} link={path} />
+            <time className="dt-published">
+                {format(parse(meta.publishedAt), 'MMMM DD, YYYY')}
+            </time>
           </div>
         </header>
         <div className="e-content">{children}</div>
@@ -34,9 +39,13 @@ function BlogPost({ path, meta, children }) {
           font-family: Helvetca, Arial, sans-serif;
           font-size: 3rem;
         }
+        .e-content {
+          font-family: "Inter", "Source Sans Pro","Helvetica Neue", Arial, sans-serif;
+          font-size: 1.2em;
+        }
       `}</style>
     </div>
   )
 }
 
-export default BlogPost
+export default Post

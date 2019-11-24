@@ -1,6 +1,9 @@
 import * as React from 'react'
 import { BlogPost } from '../interfaces/BlogPost'
 import Link from 'next/link'
+import { parse, format } from 'date-fns'
+
+
 
 type Props = {
   posts: BlogPost[]
@@ -16,7 +19,11 @@ const LastBlogPosts: React.FunctionComponent<Props> = ({ posts }) =>
                     <Link href={item.path}>
                       <a className="title">{item.title}</a>
                     </Link>
-                    <p className="publishedAt">{item.publishedAt}</p>
+                    <div>
+                    <time className="dt-published">
+                        {format(parse(item.publishedAt), 'MMMM DD, YYYY')}
+                    </time>
+                    </div>
                     <p className="summary">{item.summary}</p>
 
                 </div>
