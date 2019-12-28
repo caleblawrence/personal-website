@@ -7,26 +7,33 @@ const Work: React.FunctionComponent<Props> = () => (
     <div className="wrapper">
         <h1 className="sectionTitle">Work.</h1>
         <div className="muvWork">
-            <div className="workContent">
-                <h1 className="companyTitle">muv</h1>
-                <img src="/muv-logo.png" className="companyLogo" alt="muv logo" />
-                <p className="workDescription">As a software developer at muv I worked on software design, backend, and frontend development.</p>
-            </div>  
+            <div className="muvColorOverlay">
+                <div className="workContent">
+                    <h1 className="companyTitle">muv</h1>
+                    <img src="/muv-logo.png" className="companyLogo" alt="muv logo" />
+                    <p className="workDescription">As a software developer at muv I worked on software design, backend, and frontend development.</p>
+                </div>  
+            </div>
+            
         </div>
         <div className="twoColumn">
             <div className="atosWork">
-                <div className="workContent">
-                    <h1 className="companyTitle">Atos</h1>
-                    <img src="/atos-logo.png" className="companyLogo" alt="muv logo" />
-                    <p className="workDescription">I worked with Atos for my senior design project in college. My team built a custom survey application that Atos uses to determine the needs of potential clients.</p>
-                </div>  
+                <div className="atosColorOverlay">
+                    <div className="workContent">
+                        <h1 className="companyTitle">Atos</h1>
+                        <img src="/atos-logo.png" className="companyLogo" alt="muv logo" />
+                        <p className="workDescription">I worked with Atos for my senior design project in college. My team built a custom survey application that Atos uses to determine the needs of potential clients.</p>
+                    </div>  
+                </div>
             </div>
             <div className="developingSolutionsWork">
-                <div className="workContent">
-                    <h1 className="companyTitle">Developing Solutions</h1>
-                    <img src="/developing-solutions-logo.png" className="companyLogo" alt="muv logo" />
-                    <p className="workDescription">I interned at Developing Solutions for a couple years while in school and worked on multiple in-house web applications.</p>
-                </div>  
+                <div className="developingSolutionsColorOverlay">
+                    <div className="workContent">
+                        <h1 className="companyTitle">Developing Solutions</h1>
+                        <img src="/developing-solutions-logo.png" className="companyLogo" alt="muv logo" />
+                        <p className="workDescription">I interned at Developing Solutions for a couple years while in school and worked on multiple in-house web applications.</p>
+                    </div>  
+                </div>
             </div>
         </div>  
 
@@ -38,20 +45,33 @@ const Work: React.FunctionComponent<Props> = () => (
             }
             .atosWork {
                 color: white;
-                background-color: #00659E;
-                height: 450px;
+                background-image: url(/atos-banner.jpg);
+                background-size:cover;
+                background-repeat:no-repeat;
                 flex: 1;
+            }
+            .atosColorOverlay {
+                background-color: rgba(0,101,158, 0.925);
+            }
+            .developingSolutionsColorOverlay {
+                background-color: rgba(42,44,46, 0.925);
+                height: 100%;
             }
             .developingSolutionsWork {
                 color: white;
-                background-color: #2A2C2E;
-                height: 450px;
+                background-image: url(/developing-solutions-banner.jpg);
+                background-size:cover;
+                background-repeat:no-repeat;                
                 flex: 1;
+            }
+            .muvColorOverlay {
+                background-color: rgba(42,44,46, 0.8);
             }
             .muvWork {
                 color: white;
-                background-color: #E58A4B;
-                height: 400px;
+                background-image: url(/muv-banner.png);
+                background-size:cover;
+                background-repeat:no-repeat;
             }
             .companyTitle {
                 text-align: center;
