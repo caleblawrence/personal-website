@@ -43,6 +43,12 @@ const IndexPage: NextPage = () => {
           padding-right: 10px; /* 3 */
           padding-left:  10px; /* 3 */
         }
+
+        @media only screen and (max-width: 768px) {
+          .sectionTitle {
+            font-size: 4rem;
+          }
+      }
       `}</style>
           
       <style jsx>{`
