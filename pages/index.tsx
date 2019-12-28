@@ -5,11 +5,16 @@ import blogposts from '../posts/index'
 import LastBlogPosts from '../components/LastBlogPosts'
 import Work from '../components/Work'
 import SayHello from '../components/SayHello'
+import Head from 'next/head'
 
 
 const IndexPage: NextPage = () => {
   return (
     <>
+      <Head>
+        <title>Caleb Lawrence</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <div className="welcome">
         <div className="centered">
           <p>
