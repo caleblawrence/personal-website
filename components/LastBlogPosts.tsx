@@ -56,6 +56,12 @@ const LastBlogPosts: React.FunctionComponent<Props> = ({ posts }) =>
                 a {
                   text-decoration: none;
                 }
+
+                @media only screen and (max-width: 768px) {
+                    .title {
+                        font-size: 1.5rem;
+                    }
+                }
             `}</style>
         </div>
     )

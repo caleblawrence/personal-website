@@ -4,7 +4,7 @@ module.exports = {
       author: 'Caleb Lawrence',
       image: '/static/site-feature.png',
       description: 'Next.js starter blog',
-      siteUrl: 'https://nextjs-blog-starter.now.sh',
+      siteUrl: 'https://caleblawrnce.dev',
       postsPerPage: 5,
     },
   }

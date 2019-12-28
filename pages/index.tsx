@@ -46,7 +46,7 @@ const IndexPage: NextPage = () => {
 
         @media only screen and (max-width: 768px) {
           .sectionTitle {
-            font-size: 4rem;
+            font-size: 3.5rem;
           }
       }
       `}</style>
@@ -77,6 +77,12 @@ const IndexPage: NextPage = () => {
           font-family: Georgia, serif;
           font-weight: 300;
         }
+
+        @media only screen and (max-width: 768px) {
+          .mainMessage {
+            font-size: 1.5rem;
+          }
+      }
       `}</style>
     </>
   )
