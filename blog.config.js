@@ -1,9 +1,9 @@
 module.exports = {
     siteMeta: {
-      title: 'Next.js Starter Blog',
+      title: 'Caleb Lawrence',
       author: 'Caleb Lawrence',
       image: '/static/site-feature.png',
-      description: 'Next.js starter blog',
+      description: 'Caleb Lawrence',
       siteUrl: 'https://caleblawrnce.dev',
       postsPerPage: 5,
     },

@@ -9,10 +9,22 @@ const mdxPlugin = require('@zeit/next-mdx')({
 })
 
 module.exports = withPlugins([
+  // image optimization plugin
   [optimizedImages, {
-    optimizeImagesInDev: true
+    handleImages: ['png'],
+    optimizeImages: true,
+    imagesFolder: 'images',
+    optimizeImagesInDev: true,
+    inlineImageLimit: 8192,
+    optipng: {
+      optimizationLevel: 3,
+    },
   }],
-  [mdxPlugin, {
+  // mdx plugin
+  [mdxPlugin],
+],
+  {
+    // next config
     target: 'serverless',
     pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx', 'md'],
     webpack: (config, { defaultLoaders, isServer, dev }) => {
@@ -21,7 +33,7 @@ module.exports = withPlugins([
         fs: 'empty',
         module: 'empty',
       }
-  
+
       config.module.rules.push(
         {
           test: /\.css$/,
@@ -45,13 +57,9 @@ module.exports = withPlugins([
         }
       )
       return config
-    },
-
+    }
   }
 
-  ]
-  // your other plugins here
 
-]);
-  
- 
+);
+

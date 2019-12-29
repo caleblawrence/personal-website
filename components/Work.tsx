@@ -10,7 +10,7 @@ const Work: React.FunctionComponent<Props> = () => (
             <div className="muvColorOverlay">
                 <div className="workContent">
                     <h1 className="companyTitle">muv</h1>
-                    <img src="/muv-logo.png" className="companyLogo" alt="muv logo" />
+                    <img src="/images/muv-logo.png" className="companyLogo" alt="muv logo" />
                     <p className="workDescription">As a software developer at muv I worked on software design, backend, and frontend development.</p>
                 </div>  
             </div>
@@ -21,7 +21,7 @@ const Work: React.FunctionComponent<Props> = () => (
                 <div className="atosColorOverlay">
                     <div className="workContent">
                         <h1 className="companyTitle">Atos</h1>
-                        <img src="/atos-logo.png" className="companyLogo" alt="muv logo" />
+                        <img src="/images/atos-logo.png" className="companyLogo" alt="muv logo" />
                         <p className="workDescription">I worked with Atos for my senior design project in college. My team built a custom survey application that Atos uses to determine the needs of potential clients.</p>
                     </div>  
                 </div>
@@ -30,7 +30,7 @@ const Work: React.FunctionComponent<Props> = () => (
                 <div className="developingSolutionsColorOverlay">
                     <div className="workContent">
                         <h1 className="companyTitle">Developing Solutions</h1>
-                        <img src="/developing-solutions-logo.png" className="companyLogo" alt="muv logo" />
+                        <img src="/images/developing-solutions-logo.png" className="companyLogo" alt="muv logo" />
                         <p className="workDescription">I interned at Developing Solutions for a couple years while in school and worked on multiple in-house web applications.</p>
                     </div>  
                 </div>
@@ -45,7 +45,7 @@ const Work: React.FunctionComponent<Props> = () => (
             }
             .atosWork {
                 color: white;
-                background-image: url(/atos-banner.png?lqip);
+                background-image: url(/images/atos-banner.png?lqip);
                 background-size:cover;
                 background-repeat:no-repeat;
                 flex: 1;
@@ -59,7 +59,7 @@ const Work: React.FunctionComponent<Props> = () => (
             }
             .developingSolutionsWork {
                 color: white;
-                background-image: url(/developing-solutions-banner.png?lqip);
+                background-image: url(/images/developing-solutions-banner.png?lqip);
                 background-size:cover;
                 background-repeat:no-repeat;                
                 flex: 1;
@@ -69,7 +69,7 @@ const Work: React.FunctionComponent<Props> = () => (
             }
             .muvWork {
                 color: white;
-                background-image: url(/muv-banner.png?lqip);
+                background-image: url(/images/muv-banner.png?lqip);
                 background-size:cover;
                 background-repeat:no-repeat;
             }

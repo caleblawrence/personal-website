@@ -17,7 +17,7 @@ const SayHello: React.FunctionComponent<Props> = () => (
             </div>
 
             <div className="profilePicture">
-                <img src="/me.png" className="me" alt="me" />
+                <img src="/images/me.png" className="me" alt="me" />
             </div>
         </div>
        
