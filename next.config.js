@@ -1,11 +1,18 @@
-const withMDX = require('@zeit/next-mdx')({
-    extension: /.mdx?$/,
-    options: {
-      hastPlugins: [require('mdx-prism')],
-    },
-  })
-  
-  module.exports = withMDX({
+const withPlugins = require('next-compose-plugins');
+const optimizedImages = require('next-optimized-images');
+
+const mdxPlugin = require('@zeit/next-mdx')({
+  extension: /.mdx?$/,
+  options: {
+    hastPlugins: [require('mdx-prism')],
+  },
+})
+
+module.exports = withPlugins([
+  [optimizedImages, {
+    optimizeImagesInDev: true
+  }],
+  [mdxPlugin, {
     target: 'serverless',
     pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx', 'md'],
     webpack: (config, { defaultLoaders, isServer, dev }) => {
@@ -39,4 +46,12 @@ const withMDX = require('@zeit/next-mdx')({
       )
       return config
     },
-  })
+
+  }
+
+  ]
+  // your other plugins here
+
+]);
+  
+ 
