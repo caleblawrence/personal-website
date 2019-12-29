@@ -1,5 +1,4 @@
 import SyntaxHighlightStyles from '../syntax-highlight'
-import { parse, format } from 'date-fns'
 import { BlogPost } from '../../interfaces/BlogPost'
 
 
@@ -18,7 +17,7 @@ const Post: React.FunctionComponent<Props> = ({ meta, children }) => {
 
           <div>
             <time className="dt-published">
-                {format(parse(meta.publishedAt), 'MMMM DD, YYYY')}
+                {meta.publishedAt}
             </time>
           </div>
         </header>

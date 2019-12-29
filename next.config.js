@@ -8,6 +8,10 @@ const mdxPlugin = require('@zeit/next-mdx')({
   },
 })
 
+const bundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: process.env.ANALYZE === 'true',
+})
+
 module.exports = withPlugins([
   // image optimization plugin
   [optimizedImages, {
@@ -22,6 +26,7 @@ module.exports = withPlugins([
   }],
   // mdx plugin
   [mdxPlugin],
+  [bundleAnalyzer],
 ],
   {
     // next config
