@@ -48,7 +48,7 @@ const LastBlogPosts: React.FunctionComponent<Props> = ({ posts }) =>
                 }
 
                 .blog {
-                    height: 100vh;
+                    margin-bottom: 100px;
                 }
                 a {
                   text-decoration: none;

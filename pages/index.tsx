@@ -1,6 +1,5 @@
 import * as React from 'react'
 import { NextPage } from 'next'
-// import { siteMeta } from '../blog.config'
 import blogposts from '../posts/index'
 import LastBlogPosts from '../components/LastBlogPosts'
 import Work from '../components/Work'
@@ -53,6 +52,10 @@ const IndexPage: NextPage = () => {
           .sectionTitle {
             font-size: 3.5rem;
           }
+      }
+
+      code {
+        color: white !important;
       }
       `}</style>
           

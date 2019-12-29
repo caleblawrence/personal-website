@@ -161,6 +161,7 @@ export default () => (
         padding: 0.1em 0.2em;
         background-color: #2b2b2b;
         border-radius: 0.3em;
+        color: white;
       }
 
       code[class*='language-'],

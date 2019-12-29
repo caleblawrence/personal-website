@@ -1,10 +1,9 @@
 const withPlugins = require('next-compose-plugins');
-const optimizedImages = require('next-optimized-images');
 
 const mdxPlugin = require('@zeit/next-mdx')({
   extension: /.mdx?$/,
   options: {
-    hastPlugins: [require('mdx-prism')],
+    rehypePlugins: [require('mdx-prism')],
   },
 })
 
@@ -13,17 +12,6 @@ const bundleAnalyzer = require('@next/bundle-analyzer')({
 })
 
 module.exports = withPlugins([
-  // image optimization plugin
-  [optimizedImages, {
-    handleImages: ['png'],
-    optimizeImages: true,
-    imagesFolder: 'images',
-    optimizeImagesInDev: true,
-    inlineImageLimit: 8192,
-    optipng: {
-      optimizationLevel: 3,
-    },
-  }],
   // mdx plugin
   [mdxPlugin],
   [bundleAnalyzer],
