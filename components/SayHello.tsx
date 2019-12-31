@@ -4,7 +4,7 @@ type Props = {
 }
 
 const SayHello: React.FunctionComponent<Props> = () => (
-    <div className="wrapper">
+    <div>
         <h1 className="sectionTitle">Say Hello.</h1>
         <div className="content">
             <div className="helloBox">

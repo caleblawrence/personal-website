@@ -5,11 +5,13 @@ import LastBlogPosts from '../components/LastBlogPosts'
 import Work from '../components/Work'
 import SayHello from '../components/SayHello'
 import Head from 'next/head'
+import Link from 'next/link'
+
 
 
 const IndexPage: NextPage = () => {
   return (
-    <>
+    <div className="wrapper">
       <Head>
         <title>Caleb Lawrence</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -25,7 +27,13 @@ const IndexPage: NextPage = () => {
         </div>
       </div>
 
-      <LastBlogPosts posts={blogposts} />
+      <LastBlogPosts posts={blogposts} maxPostsToShow={4}/>
+
+      <Link href="/posts">
+          <a href="" className="btn">
+              View all posts
+          </a>
+      </Link>
       <Work />
       <SayHello />
 
@@ -33,6 +41,10 @@ const IndexPage: NextPage = () => {
       <style jsx global>{`
         body {
           font-family: normal 16px/1.9em "Inter", "Source Sans Pro","Helvetica Neue", Arial, sans-serif;
+        }
+
+        a {
+          text-decoration: none;
         }
         .sectionTitle {
           font-size: 7rem;
@@ -91,8 +103,17 @@ const IndexPage: NextPage = () => {
             font-size: 1.5rem;
           }
       }
+      .btn {
+        border: 1px solid black;
+        padding: 7px;
+        color: black;
+        border-radius: 3px;
+        font-family: Helvetca, Arial, sans-serif;
+        margin-top: 5px;
+        display: inline-block;
+    }
       `}</style>
-    </>
+    </div>
   )
 }
 

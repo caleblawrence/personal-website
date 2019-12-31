@@ -4,7 +4,7 @@ type Props = {
 }
 
 const Work: React.FunctionComponent<Props> = () => (
-    <div className="wrapper">
+    <div>
         <h1 className="sectionTitle">Work.</h1>
         <div className="muvWork">
             <div className="muvColorOverlay">
