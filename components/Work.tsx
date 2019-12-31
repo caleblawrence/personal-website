@@ -45,7 +45,7 @@ const Work: React.FunctionComponent<Props> = () => (
             }
             .atosWork {
                 color: white;
-                background-image: url(/images/atos-banner.png);
+                background-image: url(/images/atos-banner.jpg);
                 background-size:cover;
                 background-repeat:no-repeat;
                 flex: 1;
@@ -59,7 +59,7 @@ const Work: React.FunctionComponent<Props> = () => (
             }
             .developingSolutionsWork {
                 color: white;
-                background-image: url(/images/developing-solutions-banner.png);
+                background-image: url(/images/developing-solutions-banner.jpg);
                 background-size:cover;
                 background-repeat:no-repeat;                
                 flex: 1;
@@ -69,7 +69,7 @@ const Work: React.FunctionComponent<Props> = () => (
             }
             .muvWork {
                 color: white;
-                background-image: url(/images/muv-banner.png);
+                background-image: url(/images/muv-banner.jpg);
                 background-size:cover;
                 background-repeat:no-repeat;
             }
