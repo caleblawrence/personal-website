@@ -20,7 +20,7 @@ const LastBlogPosts: React.FunctionComponent<Props> = ({ posts, maxPostsToShow }
                     </Link>
                     <div>
                         <time className="dt-published">
-                            {item.publishedAt}
+                            {item.publishedAtHumanFriendly}
                         </time>
                     </div>
                     <p className="summary">{item.summary}</p>

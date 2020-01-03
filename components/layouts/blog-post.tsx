@@ -23,7 +23,7 @@ const Post: React.FunctionComponent<Props> = ({ meta, children }) => {
 
           <div>
             <time className="dt-published">
-                {meta.publishedAt}
+                {meta.publishedAtHumanFriendly}
             </time>
           </div>
         </header>

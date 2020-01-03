@@ -87,8 +87,4 @@ const IndexPage: NextPage = () => {
   )
 }
 
-IndexPage.getInitialProps = async ({ query }) => {
-  return query ? { page: query.page } : {}
-}
-
 export default IndexPage
