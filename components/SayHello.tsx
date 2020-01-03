@@ -72,12 +72,10 @@ const SayHello: React.FunctionComponent<Props> = () => (
             }
             .content {
                 display: flex;
-                justify-content: space-between;            
+                justify-content: space-between;  
+                margin-bottom: 40px;                  
             }
 
-            .sectionTitle {
-                margin-top: 100px;
-            }
             .helloBox {
                 flex: 1;
                 background-color: #FFEEEE;
@@ -103,7 +101,11 @@ const SayHello: React.FunctionComponent<Props> = () => (
                 }
 
                 .profilePicture {
-                    flex: 0;
+                    flex: 1;
+                }
+
+                .content {
+                    flex-direction: column;  
                 }
             }
           

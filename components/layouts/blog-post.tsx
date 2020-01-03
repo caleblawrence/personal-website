@@ -1,5 +1,7 @@
 import SyntaxHighlightStyles from '../syntax-highlight'
 import { BlogPost } from '../../interfaces/BlogPost'
+import Head from 'next/head'
+
 
 
 type Props = {
@@ -10,6 +12,10 @@ type Props = {
 const Post: React.FunctionComponent<Props> = ({ meta, children }) => {
   return (
     <div>
+      <Head>
+        <title>{meta.title}</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <SyntaxHighlightStyles />
       <article className="h-entry">
         <header>
@@ -30,9 +36,6 @@ const Post: React.FunctionComponent<Props> = ({ meta, children }) => {
           margin-right: auto;
           max-width: 42rem;
           padding: 2.625rem 1.3125rem;
-        }
-        code {
-          color: white !important;
         }
         .blogTitle {
           font-family: Helvetca, Arial, sans-serif;

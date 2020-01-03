@@ -29,6 +29,9 @@ const LastBlogPosts: React.FunctionComponent<Props> = ({ posts, maxPostsToShow }
             ))}
             
             <style jsx>{`
+                .sectionTitle {
+                    margin-top: 0px;
+                }
                 .title {
                     color: #DB7575;
                     font-size: 2rem;
