@@ -65,6 +65,7 @@ const IndexPage: NextPage = () => {
         .mainMessage {
           font-family: Georgia, serif;
           font-weight: 300;
+          text-align: center;
         }
 
         @media only screen and (max-width: 768px) {

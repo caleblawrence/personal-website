@@ -77,7 +77,8 @@ const Work: React.FunctionComponent<Props> = () => (
                 text-align: center;
                 font-size: 3rem;
                 font-family: Helvetca, Arial, sans-serif;
-                margin-bottom: 15px;
+                margin-bottom: 10px;
+                margin-top: 10px;
             }
             .companyLogo {
                 height: 90px;
@@ -89,19 +90,23 @@ const Work: React.FunctionComponent<Props> = () => (
             .workDescription {
                 color: white;
                 text-align: center;
-                margin: 0 auto 60px;
+                margin: 0 auto 20px;
                 font-family: Helvetca, Arial, sans-serif;
                 font-size: 1.3em;
-                margin-top: 25px;
+                margin-top: 15px;
                 max-width: 500px;
                 line-height: 30px;
             }
             .workContent {
-                padding: 40px;
+                padding: 30px;
             }
 
             @media only screen and (max-width: 768px) {
                 /* For mobile phones: */
+
+                .workDescription {
+                   1.2em;
+                }
                 .twoColumn {
                     flex-direction: column;
                 }
@@ -111,6 +116,13 @@ const Work: React.FunctionComponent<Props> = () => (
 
                 .companyTitle {
                     margin-top: 5px;
+                    font-size: 2rem;
+                }
+
+                .companyLogo {
+                    height: 60px;
+                    width: 60px;
+                    display: block;
                 }
             }
         `}</style>

@@ -30,18 +30,21 @@ const SayHello: React.FunctionComponent<Props> = () => (
                 font-size: 18px;
                 margin-top: 30px;
                 margin-bottom: 0;
+                font-family: Helvetca, Arial, sans-serif;
             }
             .location {
                 font-size: 18px;
                 padding: 0;
                 margin: 0;
                 margin-top: 5px;
+                font-family: Helvetca, Arial, sans-serif;
             }
             .summary {
                 font-size: 18px;
                 max-width: 70%;
                 line-height: 1.5;
-                margin-top: 50px
+                margin-top: 50px;
+                font-family: Helvetca, Arial, sans-serif;
             }
             .divider {
                 margin-left: 0;
@@ -80,7 +83,6 @@ const SayHello: React.FunctionComponent<Props> = () => (
                 flex: 1;
                 background-color: #FFEEEE;
                 padding: 70px;
-
             }
 
             .profilePicture {
