@@ -20,6 +20,7 @@ module.exports = withPlugins([
     // next config
     target: 'serverless',
     pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx', 'md'],
+    reactMode: 'concurrent',
     webpack: (config, { defaultLoaders, isServer, dev }) => {
       // Fixes npm packages that depend on `fs` module
       config.node = {
@@ -52,7 +53,5 @@ module.exports = withPlugins([
       return config
     }
   }
-
-
 );
 
