@@ -20,12 +20,14 @@ module.exports = withPlugins([
     // next config
     target: 'serverless',
     pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx', 'md'],
-    reactMode: 'concurrent',
+    experimental: {
+      reactMode: 'concurrent',
+    },
     webpack: (config, { defaultLoaders, isServer, dev }) => {
       // Fixes npm packages that depend on `fs` module
       config.node = {
         fs: 'empty',
-        module: 'empty',
+        module: 'empty'
       }
 
       config.module.rules.push(
