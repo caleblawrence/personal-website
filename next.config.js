@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 const withPlugins = require('next-compose-plugins');
 
 const mdxPlugin = require('@zeit/next-mdx')({

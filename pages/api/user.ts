@@ -1,9 +1,14 @@
-import { NextApiRequest, NextApiResponse } from 'next'
+import nextConnect from "next-connect";
+import middleware from "../../middleware/middleware";
 
-export default (req: NextApiRequest, res: NextApiResponse) => {
-    const requestData = req;
-    console.log(requestData);
-    res.statusCode = 200
-    res.setHeader('Content-Type', 'application/json')
-    res.end(JSON.stringify({ name: 'John Doe2' }))
-  }
+const handler = nextConnect();
+
+handler.use(middleware);
+
+handler.get(async (req: any, res: any) => {
+  const doc = await req.db.collection("hello").findOne({});
+
+  res.json(doc);
+});
+
+export default handler;
