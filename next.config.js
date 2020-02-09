@@ -19,10 +19,6 @@ module.exports = withPlugins([
   [bundleAnalyzer],
 ],
   {
-    env: {
-      MONGODB_URI: process.env.MONGODB_URI,
-      DB_NAME: process.env.DB_NAME,
-    },
     // next config
     target: 'serverless',
     pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx', 'md'],
@@ -59,7 +55,11 @@ module.exports = withPlugins([
         }
       )
       return config
-    }
+    },
+    env: {
+      MONGODB_URI: process.env.MONGODB_URI,
+      DB_NAME: process.env.DB_NAME,
+    },
   }
 );
 
