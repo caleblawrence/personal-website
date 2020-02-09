@@ -4,5 +4,9 @@
     "builds": [{ "src": "package.json", "use": "@now/next" }],
     "routes": [
       { "src": "/blog/(?<page>[^/]+)$", "dest": "/blog?page=$page" }
-    ]
+    ],
+
+    "env": {
+      "MONGODB_URI": "@mongodb_uri"
+    }
   }
