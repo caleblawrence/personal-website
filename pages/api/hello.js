@@ -6,13 +6,13 @@ const handler = nextConnect();
 handler.use(middleware);
 
 // GET /api/user
-handler.get(async (req: any, res: any) => {
+handler.get(async (req, res) => {
   const doc = await req.db.collection("hello").findOne({});
   res.json(doc);
 });
 
 // POST /api/user
-handler.post(async (req: any, res: any) => {
+handler.post(async (req, res) => {
   const { name, email, message } = req.body;
 
   if (!message) {
