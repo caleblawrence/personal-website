@@ -19,8 +19,4 @@ const Posts: NextPage = () => {
   )
 }
 
-Posts.getInitialProps = async ({ query }) => {
-  return query ? { page: query.page } : {}
-}
-
 export default Posts

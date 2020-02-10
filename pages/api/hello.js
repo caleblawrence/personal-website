@@ -2,13 +2,14 @@ import nextConnect from "next-connect";
 import middleware from "../../middleware/middleware";
 
 const handler = nextConnect();
-
 handler.use(middleware);
 
 // GET /api/user
 handler.get(async (req, res) => {
-  const doc = await req.db.collection("hello").findOne({});
-  res.json(doc);
+  const doc = await req.db.collection("hello").find({}).limit(10).toArray(function (error, documents) {
+    if (error) throw error;
+    res.send(documents);
+  });
 });
 
 // POST /api/user

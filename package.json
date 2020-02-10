@@ -9,6 +9,7 @@
     "analyze": "ANALYZE=true next build"
   },
   "dependencies": {
+    "@material-ui/core": "^4.9.2",
     "@mdx-js/loader": "^1.5.1",
     "@next/bundle-analyzer": "^9.1.6",
     "@next/mdx": "^9.1.4",
