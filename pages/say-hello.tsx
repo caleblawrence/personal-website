@@ -38,7 +38,6 @@ const SayHello: NextPage = () => {
       })
   }
 
-
   return (
     <div className="hello-wrapper">
       <Meta />
@@ -96,7 +95,7 @@ const SayHello: NextPage = () => {
         <>
           <br />  
           <br />  
-          
+
           <Typography variant="h4" gutterBottom>
             Thanks. I'll get back with you.
           </Typography>

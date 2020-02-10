@@ -57,14 +57,8 @@ module.exports = withPlugins([
       return config
     },
     env: {
-      mongodb_uri: process.env.mongodb_uri,
-      DB_NAME: process.env.DB_NAME,
-    },
-    serverRuntimeConfig: {
-      // Will only be available on the server side
-      mongodb_uri: process.env.mongodb_uri,
-      DB_NAME: process.env.DB_NAME,
-    },
+      mongodb_uri: process.env.mongodb_uri
+    }
   }
 );
 

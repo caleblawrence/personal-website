@@ -7,3 +7,6 @@ export type BlogPost = {
     image: string
     path: string
   }
+  
+
+
