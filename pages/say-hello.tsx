@@ -50,7 +50,7 @@ const SayHello: NextPage = () => {
         Say Hello
       </Typography>
       <Grid container spacing={3}>
-        <Grid item sm={12}>
+        <Grid item xs={12}>
           <TextField
             id="name"
             name="name"
@@ -61,7 +61,7 @@ const SayHello: NextPage = () => {
             onChange={(e) => setName(e.target.value)}
           />
         </Grid>
-        <Grid item sm={12}>
+        <Grid item xs={12}>
           <TextField
             id="email"
             name="email"
@@ -72,7 +72,7 @@ const SayHello: NextPage = () => {
             onChange={(e) => setEmail(e.target.value)}
           />
         </Grid>
-        <Grid item sm={12}>
+        <Grid item xs={12}>
           <TextField
             label="Message"
             multiline={true}
@@ -84,11 +84,11 @@ const SayHello: NextPage = () => {
             onChange={(e) => setMessage(e.target.value)}
           />
         </Grid>
-        <div className="submitButton">
+        <Grid item xs={12}>
           <Button variant="contained" color="primary" onClick={() => submit()}>
             Submit
             </Button>
-        </div>
+        </Grid>
       </Grid>
 
       {submitted && 
@@ -109,9 +109,6 @@ const SayHello: NextPage = () => {
           max-width: 900px; /* 2 */
           padding-right: 10px; /* 3 */
           padding-left:  10px; /* 3 */
-        }
-        .submitButton {
-          margin-left: 10px !important;
         }
       `}</style>
     </div>

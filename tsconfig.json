@@ -6,7 +6,10 @@
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "lib": ["dom", "es2017"],
+    "lib": [
+      "dom",
+      "es2017"
+    ],
     "module": "esnext",
     "moduleResolution": "node",
     "noEmit": true,
@@ -18,6 +21,20 @@
     "strict": true,
     "target": "esnext"
   },
-  "exclude": ["node_modules"],
-  "include": ["**/*.ts", "**/*.tsx", "utils/get-blog-posts.js", "components/suspense-example/Num.js", "components/suspense-example/Person.js", "components/suspense-example/PersonApi.js", "components/suspense-example/Suspense.js"]
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "utils/get-blog-posts.js",
+    "components/suspense-example/Num.js",
+    "components/suspense-example/Person.js",
+    "components/suspense-example/PersonApi.js",
+    "components/suspense-example/Suspense.js",
+    "components/syntax-highlight.js", "posts/get-blog-posts.js"
+  ],
+  "typeRoots": [
+    "./src/types"
+  ]
 }

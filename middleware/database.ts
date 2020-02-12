@@ -1,4 +1,5 @@
 import { MongoClient } from 'mongodb';
+import { Request } from '../interfaces/Request';
 
 console.log("mongo URI", process.env.mongodb_uri);
 
@@ -11,9 +12,8 @@ const client = new MongoClient(mongodb_uri, {
 });
 
 
-export default async function database(req, res, next) {
+export default async function database(req: Request, next: any) {
   if (!client.isConnected()) await client.connect();
-  req.dbClient = client;
   req.db = client.db('hello');
   return next();
 }
