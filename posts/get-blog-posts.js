@@ -5,7 +5,7 @@ import { join } from 'path';
 const DIR = join(process.cwd(), '/pages/posts/')
 const META = /export\s+const\s+meta\s+=\s+({[\s\S]*?\n})/
 const files = readdirSync(DIR)
-  .filter((file: string) => file.endsWith('.md') || file.endsWith('.mdx'))
+  .filter((file) => file.endsWith('.md') || file.endsWith('.mdx'))
 
 module.exports = files
   .map((file, index) => {
@@ -29,4 +29,4 @@ module.exports = files
     }
   })
   .filter(meta => meta.published)
-  .sort((a, b) => +new Date(b.publishedAt) - +new Date(a.publishedAt))
+  .sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt))
