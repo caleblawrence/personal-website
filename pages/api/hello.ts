@@ -1,4 +1,4 @@
-import nextConnect from "next-connect";
+import nextConnect from 'next-connect';
 import middleware from "../../middleware/middleware";
 import { Request } from '../../interfaces/Request';
 import { NextApiResponse } from 'next'
