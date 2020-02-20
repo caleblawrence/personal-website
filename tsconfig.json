@@ -27,11 +27,7 @@
   "include": [
     "**/*.ts",
     "**/*.tsx",
-    "utils/get-blog-posts.js",
-    "components/suspense-example/Num.js",
-    "components/suspense-example/Person.js",
-    "components/suspense-example/PersonApi.js",
-    "components/suspense-example/Suspense.js",
+    "utils/get-blog-posts.ts",
     "components/syntax-highlight.js", "posts/get-blog-posts.js"
   ],
   "typeRoots": [
