@@ -27,7 +27,7 @@
   "include": [
     "**/*.ts",
     "**/*.tsx",
-    "components/syntax-highlight.js", "posts/get-blog-posts.ts", "posts/index.js"
+    "components/syntax-highlight.js", "posts/get-blog-posts.js", "posts/index.js"
   ],
   "typeRoots": [
     "./src/types"
