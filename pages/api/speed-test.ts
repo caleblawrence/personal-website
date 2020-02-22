@@ -1,7 +1,9 @@
-import { NextApiResponse } from "next";
+import { NextApiRequest, NextApiResponse } from 'next'
 
-export default (res: NextApiResponse) => {
-  res.statusCode = 200;
-  res.setHeader("Content-Type", "application/json");
-  res.end(JSON.stringify({ currentTime: Date() }));
-};
+type Data = {
+    currentTime: string
+}
+
+export default (_req: NextApiRequest, res: NextApiResponse<Data>) => {
+  res.status(200).json({ currentTime: Date() })
+}
