@@ -6,7 +6,7 @@ import fetch from 'unfetch'
 import useSWR from 'swr'
 
 
-const API_URL: string = 'http://api.open-notify.org'
+const API_URL: string = 'https://api.wheretheiss.at'
 
 async function fetcher(path: string) {
   const res = await fetch(API_URL + path)
@@ -15,7 +15,7 @@ async function fetcher(path: string) {
 }
 
 const ISSPosition: NextPage = () => {
-  const { data, error } = useSWR('/iss-now.json', fetcher, {refreshInterval: 60000 })
+  const { data, error } = useSWR('/v1/satellites/25544', fetcher, {refreshInterval: 60000 })
 
   return (
     <div className="wrapper">
@@ -31,11 +31,13 @@ const ISSPosition: NextPage = () => {
 
       {!data && <div>loading...</div>}
 
-      {data && data.iss_position &&
+      {data  &&
         (
           <div>
-             <p style={{fontSize: 20}}>Latitude: {data.iss_position.latitude}</p>
-             <p style={{fontSize: 20}}>Longitude: {data.iss_position.longitude}</p>
+             <p style={{fontSize: 20}}>Latitude: {data.latitude}</p>
+             <p style={{fontSize: 20}}>Longitude: {data.longitude}</p>
+             <p style={{fontSize: 20}}>Altitude: {data.altitude}</p>
+             <p style={{fontSize: 20}}>velocity: {data.velocity}</p>
           </div>
         )
       }
