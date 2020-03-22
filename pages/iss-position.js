@@ -4,7 +4,6 @@ import Meta from '../components/meta'
 import fetch from 'unfetch'
 import useSWR from 'swr'
 
-
 const API_URL = 'https://api.wheretheiss.at'
 
 async function fetcher(path) {
