@@ -3,3 +3,20 @@
 @tailwind components;
 /* purgecss end ignore */
 @tailwind utilities;
+
+ /* Scrollbar Styles */
+ body::-webkit-scrollbar {
+    width: 12px;
+  }
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: #f99292 white
+  }
+  body::-webkit-scrollbar-track {
+    background: var(#000000);
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: #f99292;
+    border-radius: 6px;
+    border: 3px solid white;
+  }
