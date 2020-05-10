@@ -1,6 +1,6 @@
-import Date from './date'
-import CoverImage from './coverImage'
 import Link from 'next/link'
+import CoverImage from './coverImage'
+import Date from './date'
 
 export default function PostPreview({
   title,

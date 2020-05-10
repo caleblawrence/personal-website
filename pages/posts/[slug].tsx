@@ -1,12 +1,12 @@
-import { useRouter } from 'next/router'
 import ErrorPage from 'next/error'
-import Container from '../../components/container'
+import Head from 'next/head'
+import { useRouter } from 'next/router'
 import PostBody from '../../components/Blog/postBody'
 import PostHeader from '../../components/Blog/postHeader'
-import Layout from '../../components/layout'
-import { getPostBySlug, getAllPosts } from '../../lib/api'
 import PostTitle from '../../components/Blog/postTitle'
-import Head from 'next/head'
+import Container from '../../components/container'
+import Layout from '../../components/layout'
+import { getAllPosts, getPostBySlug } from '../../lib/api'
 import { CMS_NAME } from '../../lib/constants'
 import markdownToHtml from '../../lib/markdownToHtml'
 
@@ -33,7 +33,6 @@ export default function Post({ post, morePosts, preview }) {
                 title={post.title}
                 coverImage={post.coverImage}
                 date={post.date}
-                author={post.author}
               />
               <PostBody content={post.content} />
             </article>

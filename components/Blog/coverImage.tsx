@@ -1,7 +1,14 @@
-import cn from 'classnames'
-import Link from 'next/link'
+import cn from 'classnames';
+import Link from 'next/link';
 
-export default function CoverImage({ title, src, slug }) {
+interface Props {
+  title: string, 
+  src: string,
+  slug?: string
+}
+
+const CoverImage = (props: Props) => {
+  const {title, src, slug} = props;
   const image = (
     <img
       src={src}
@@ -23,3 +30,5 @@ export default function CoverImage({ title, src, slug }) {
     </div>
   )
 }
+
+export default CoverImage;

@@ -1,5 +1,5 @@
-import PostPreview from "./postPreview";
 import SectionTitle from "../sectionTitle";
+import PostPreview from "./postPreview";
 
 export default function BlogPosts({ posts }) {
   return (
