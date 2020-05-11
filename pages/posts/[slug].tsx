@@ -7,10 +7,9 @@ import PostTitle from '../../components/Blog/postTitle'
 import Container from '../../components/container'
 import Layout from '../../components/layout'
 import { getAllPosts, getPostBySlug } from '../../lib/api'
-import { CMS_NAME } from '../../lib/constants'
 import markdownToHtml from '../../lib/markdownToHtml'
 
-export default function Post({ post, morePosts, preview }) {
+export default function Post({ post, preview }) {
   const router = useRouter()
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
@@ -21,23 +20,33 @@ export default function Post({ post, morePosts, preview }) {
         {router.isFallback ? (
           <PostTitle>Loading…</PostTitle>
         ) : (
-          <>
-            <article className="mb-32">
-              <Head>
-                <title>
-                  {post.title} | Next.js Blog Example with {CMS_NAME}
-                </title>
-                <meta property="og:image" content={post.ogImage.url} />
-              </Head>
-              <PostHeader
-                title={post.title}
-                coverImage={post.coverImage}
-                date={post.date}
-              />
-              <PostBody content={post.content} />
-            </article>
-          </>
-        )}
+            <>
+              <article className="mb-32">
+                <Head>
+                  <title>
+                    {post.title}
+                  </title>
+                  <meta property="og:image" content={post.ogImage.url} />
+                </Head>
+                <h3 style={{ color: "#f99292", marginTop: 25, fontSize: 20, fontWeight: 900 }}
+                >
+                  <a
+                    href="/"
+                    style={{boxShadow: "none", textDecoration: "none"}}
+                  >
+                    Caleb Lawrence
+              </a>
+                </h3>
+
+                <PostHeader
+                  title={post.title}
+                  coverImage={post.coverImage}
+                  date={post.date}
+                />
+                <PostBody content={post.content} />
+              </article>
+            </>
+          )}
       </Container>
     </Layout>
   )
