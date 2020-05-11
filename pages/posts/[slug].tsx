@@ -5,6 +5,7 @@ import PostBody from '../../components/Blog/postBody'
 import PostHeader from '../../components/Blog/postHeader'
 import PostTitle from '../../components/Blog/postTitle'
 import Container from '../../components/container'
+import HomeButton from '../../components/HomeButton'
 import Layout from '../../components/layout'
 import { getAllPosts, getPostBySlug } from '../../lib/api'
 import markdownToHtml from '../../lib/markdownToHtml'
@@ -28,15 +29,7 @@ export default function Post({ post, preview }) {
                   </title>
                   <meta property="og:image" content={post.ogImage.url} />
                 </Head>
-                <h3 style={{ color: "#f99292", marginTop: 25, fontSize: 20, fontWeight: 900 }}
-                >
-                  <a
-                    href="/"
-                    style={{boxShadow: "none", textDecoration: "none"}}
-                  >
-                    Caleb Lawrence
-              </a>
-                </h3>
+                <HomeButton />
 
                 <PostHeader
                   title={post.title}
