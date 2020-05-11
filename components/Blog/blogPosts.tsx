@@ -5,7 +5,7 @@ import PostPreview from "./postPreview";
 export default function BlogPosts({ posts }) {
   return (
     <section>
-      {posts.length === 2 &&
+      {posts.length !== 2 &&
         <HomeButton />
       }
 

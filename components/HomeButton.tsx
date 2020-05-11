@@ -1,6 +1,6 @@
 export default function HomeButton() {
     return (
-        <h3 style={{ color: "#f99292", marginTop: 15, fontSize: 20, fontWeight: 900 }}
+        <h3 style={{ color: "#f99292", marginTop: 15, fontWeight: 900 }}
         >
           <a
             href="/"
