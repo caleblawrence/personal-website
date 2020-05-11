@@ -5,16 +5,15 @@ export default function HomeButton() {
       >
         <a
           href="/"
-          style={{ boxShadow: "none", textDecoration: "none" }}
+          style={{ boxShadow: "none", textDecoration: "none", borderBottom: "3px solid rgb(249, 146, 146)" }}
         >
           Caleb Lawrence
         </a>
         <style jsx>{`
             .homeButton {
-                color: #f99292;
+                color: black;
                 margin-top: 15px;
                 margin-bottom: 20px;
-                font-weight: 800;
                 font-size: 20px
             }
 

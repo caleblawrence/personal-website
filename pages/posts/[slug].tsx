@@ -1,14 +1,14 @@
+import PostBody from 'components/Blog/postBody'
+import PostHeader from 'components/Blog/postHeader'
+import PostTitle from 'components/Blog/postTitle'
+import Container from 'components/container'
+import HomeButton from 'components/HomeButton'
+import Layout from 'components/layout'
+import { getAllPosts, getPostBySlug } from 'lib/api'
+import markdownToHtml from 'lib/markdownToHtml'
 import ErrorPage from 'next/error'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
-import PostBody from '../../components/Blog/postBody'
-import PostHeader from '../../components/Blog/postHeader'
-import PostTitle from '../../components/Blog/postTitle'
-import Container from '../../components/container'
-import HomeButton from '../../components/HomeButton'
-import Layout from '../../components/layout'
-import { getAllPosts, getPostBySlug } from '../../lib/api'
-import markdownToHtml from '../../lib/markdownToHtml'
 
 export default function Post({ post, preview }) {
   const router = useRouter()

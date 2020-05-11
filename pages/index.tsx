@@ -1,10 +1,10 @@
-import Container from "../components/container";
-import BlogPosts from '../components/Blog/blogPosts';
-import Layout from "../components/layout";
-import { getAllPosts } from "../lib/api";
+import BlogPosts from 'components/Blog/blogPosts';
+import Container from "components/container";
+import Layout from "components/layout";
+import SayHello from 'components/sayHello';
+import Work from 'components/work';
+import { getAllPosts } from "lib/api";
 import Head from "next/head";
-import Work from '../components/work';
-import SayHello from '../components/sayHello';
 
 export default function Index({ allPosts }) {
   let firstTwoPosts;
