@@ -5,12 +5,12 @@ import PostBody from '../../components/Blog/postBody'
 import PostHeader from '../../components/Blog/postHeader'
 import PostTitle from '../../components/Blog/postTitle'
 import Container from '../../components/container'
+import HomeButton from '../../components/HomeButton'
 import Layout from '../../components/layout'
 import { getAllPosts, getPostBySlug } from '../../lib/api'
-import { CMS_NAME } from '../../lib/constants'
 import markdownToHtml from '../../lib/markdownToHtml'
 
-export default function Post({ post, morePosts, preview }) {
+export default function Post({ post, preview }) {
   const router = useRouter()
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
@@ -21,23 +21,25 @@ export default function Post({ post, morePosts, preview }) {
         {router.isFallback ? (
           <PostTitle>Loading…</PostTitle>
         ) : (
-          <>
-            <article className="mb-32">
-              <Head>
-                <title>
-                  {post.title} | Next.js Blog Example with {CMS_NAME}
-                </title>
-                <meta property="og:image" content={post.ogImage.url} />
-              </Head>
-              <PostHeader
-                title={post.title}
-                coverImage={post.coverImage}
-                date={post.date}
-              />
-              <PostBody content={post.content} />
-            </article>
-          </>
-        )}
+            <>
+              <article className="mb-32">
+                <Head>
+                  <title>
+                    {post.title}
+                  </title>
+                  <meta property="og:image" content={post.ogImage.url} />
+                </Head>
+                <HomeButton />
+
+                <PostHeader
+                  title={post.title}
+                  coverImage={post.coverImage}
+                  date={post.date}
+                />
+                <PostBody content={post.content} />
+              </article>
+            </>
+          )}
       </Container>
     </Layout>
   )

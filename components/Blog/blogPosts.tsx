@@ -1,9 +1,14 @@
+import HomeButton from "../HomeButton";
 import SectionTitle from "../sectionTitle";
 import PostPreview from "./postPreview";
 
 export default function BlogPosts({ posts }) {
   return (
     <section>
+      {posts.length !== 2 &&
+        <HomeButton />
+      }
+
       <SectionTitle title={"Blog."} />
       <div className="grid grid-cols-1 md:grid-cols-2 md:col-gap-16 lg:col-gap-32 row-gap-20 md:row-gap-32 mb-8">
         {posts.map(post => (
@@ -12,7 +17,6 @@ export default function BlogPosts({ posts }) {
             title={post.title}
             coverImage={post.coverImage}
             date={post.date}
-            author={post.author}
             slug={post.slug}
             excerpt={post.excerpt}
           />
