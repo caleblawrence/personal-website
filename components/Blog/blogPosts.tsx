@@ -5,7 +5,10 @@ import PostPreview from "./postPreview";
 export default function BlogPosts({ posts }) {
   return (
     <section>
-      <HomeButton />
+      {posts.length === 2 &&
+        <HomeButton />
+      }
+
       <SectionTitle title={"Blog."} />
       <div className="grid grid-cols-1 md:grid-cols-2 md:col-gap-16 lg:col-gap-32 row-gap-20 md:row-gap-32 mb-8">
         {posts.map(post => (
