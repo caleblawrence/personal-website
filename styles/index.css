@@ -21,7 +21,10 @@
     border: 3px solid white;
   }
 
-
   ::selection {
     background: #fee1e1;
+  }
+
+  ul {
+    list-style: circle;
   }

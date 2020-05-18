@@ -11,7 +11,8 @@ export function getPostSlugs() {
 interface Post {
   title?: string,
   slug?: string, 
-  content?: any
+  content?: any,
+  date?: Date
 }
 
 export function getPostBySlug(slug: string, fields = []): Post {
@@ -40,6 +41,11 @@ export function getPostBySlug(slug: string, fields = []): Post {
 }
 
 export function getAllPosts(fields = []) {
-  const slugs = getPostSlugs()
-  return slugs.map(slug => getPostBySlug(slug, fields))
+  const slugs = getPostSlugs();
+  let posts = slugs.map(slug => getPostBySlug(slug, fields));
+  if (posts.length) {
+    posts = posts.sort((a, b) => +new Date(b.date) -  +new Date(a.date));
+
+  }
+  return posts;
 }
