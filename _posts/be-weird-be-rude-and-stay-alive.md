@@ -1,12 +1,12 @@
 ---
 title: 'Be weird, be rude, and stay alive.'
 excerpt: "Some thoughts about personal protection and some true crime podcasts I've been listening to lately."
-coverImage: '/assets/blog/be-weird-be-rude-and-stay-alive/cover.png'
+coverImage: '/assets/blog/be-weird-be-rude-and-stay-alive/cover.jpg'
 date: '2020-02-10T05:35:07.322Z'
 author:
   name: Caleb Lawrence
 ogImage:
-  url: '/assets/blog/be-weird-be-rude-and-stay-alive/cover.png'
+  url: '/assets/blog/be-weird-be-rude-and-stay-alive/cover.jpg'
 ---
 
 Recently I've been listening to a lot of true crime podcasts and it's been really interesting. Not really sure why I started. I guess criminal stuff has always been interesting to me. I watch a lot of crime related videos on Liveleak (basically Youtube but you less censorship) and I've always found them fascinating. If the videos didn't make me paranoid enough I now listen to podcasts.
