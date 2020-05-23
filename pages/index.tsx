@@ -1,12 +1,18 @@
+/* eslint-disable import/no-unresolved */
 import BlogPosts from 'components/Blog/blogPosts';
-import Container from "components/container";
-import Layout from "components/layout";
+import Container from 'components/container';
+import Layout from 'components/layout';
 import SayHello from 'components/sayHello';
 import Work from 'components/work';
-import { getAllPosts } from "lib/api";
-import Head from "next/head";
+import { getAllPosts } from 'lib/api';
+import Head from 'next/head';
 
-export default function Index({ allPosts }) {
+interface Props {
+  allPosts: any[];
+}
+export default function Index(props: Props) {
+  const { allPosts } = props;
+
   let firstTwoPosts;
   if (allPosts.length >= 2) {
     firstTwoPosts = [allPosts[0], allPosts[1]];
@@ -33,7 +39,8 @@ export default function Index({ allPosts }) {
           <SayHello />
         </Container>
       </Layout>
-      <style jsx>{`
+      <style jsx>
+        {`
         .welcome {
           height: 100vh;
         }
@@ -77,22 +84,23 @@ export default function Index({ allPosts }) {
           margin-top: 5px;
           display: inline-block;
         }
-      `}</style>
+      `}
+      </style>
     </>
   );
 }
 
 export async function getStaticProps() {
   const allPosts = getAllPosts([
-    "title",
-    "date",
-    "slug",
-    "author",
-    "coverImage",
-    "excerpt"
+    'title',
+    'date',
+    'slug',
+    'author',
+    'coverImage',
+    'excerpt',
   ]);
 
   return {
-    props: { allPosts }
+    props: { allPosts },
   };
 }

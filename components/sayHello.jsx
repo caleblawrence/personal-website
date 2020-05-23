@@ -1,27 +1,30 @@
-import * as React from "react";
-import SectionTitle from './sectionTitle'
+import * as React from 'react';
+import SectionTitle from './sectionTitle';
 
 const SayHello = () => (
   <div className="mt-10">
-    <SectionTitle title={'Say Hello.'} />
+    <SectionTitle title="Say Hello." />
     <div className="content">
       <div className="helloBox">
         <a
           className="email"
           href="mailto:lawrence.calebc@gmail.com"
           target="_blank"
+          rel="noreferrer"
         >
           lawrence.calebc@gmail.com
         </a>
-        <div className="divider"></div>
+        <div className="divider" />
         <p className="summary">
           I love to write code at coffee shops, train with firearms, write on my
           blog (sometimes), spend time with my wife Kai, and study the Bible.
-          Please feel free to reach out to me via{" "}
+          Please feel free to reach out to me via
+          {' '}
           <a
             className="emailParagraph"
             href="mailto:lawrence.calebc@gmail.com"
             target="_blank"
+            rel="noreferrer"
           >
             email
           </a>
@@ -36,7 +39,8 @@ const SayHello = () => (
       </div>
     </div>
 
-    <style jsx>{`
+    <style jsx>
+      {`
       .emailParagraph {
         text-decoration: underline;
         color: black;
@@ -125,7 +129,8 @@ const SayHello = () => (
           flex-direction: column;
         }
       }
-    `}</style>
+    `}
+    </style>
   </div>
 );
 

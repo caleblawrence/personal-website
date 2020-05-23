@@ -1,13 +1,20 @@
-import markdownStyles from '../markdown-styles.module.css'
+/* eslint-disable react/no-danger */
+import markdownStyles from '../markdown-styles.module.css';
 
-export default function PostBody({ content }) {
+interface Props {
+  content: any
+}
+export default function PostBody(props: Props) {
+  const { content } = props;
+
   return (
     <div className="max-w-2xl mx-auto">
       <div
-        className={markdownStyles['markdown']}
+        className={markdownStyles.markdown}
         dangerouslySetInnerHTML={{ __html: content }}
       />
-      <style jsx>{`
+      <style jsx>
+        {`
             pre {
               white-space: pre-wrap !important;       /* Since CSS 2.1 */
               white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
@@ -16,7 +23,8 @@ export default function PostBody({ content }) {
               word-wrap: break-word !important;       /* Internet Explorer 5.5+ */
             }
 
-      `}</style>
+      `}
+      </style>
     </div>
-  )
+  );
 }

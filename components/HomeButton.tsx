@@ -1,15 +1,15 @@
 export default function HomeButton() {
   return (
     <>
-      <h3 className="homeButton"
-      >
+      <h3 className="homeButton">
         <a
           href="/"
-          style={{ boxShadow: "none", textDecoration: "none", borderBottom: "3px solid rgb(249, 146, 146)" }}
+          style={{ boxShadow: 'none', textDecoration: 'none', borderBottom: '3px solid rgb(249, 146, 146)' }}
         >
           Caleb Lawrence
         </a>
-        <style jsx>{`
+        <style jsx>
+          {`
             .homeButton {
                 color: black;
                 margin-top: 15px;
@@ -17,9 +17,10 @@ export default function HomeButton() {
                 font-size: 20px
             }
 
-        `}</style>
+        `}
+        </style>
       </h3>
 
     </>
-  )
+  );
 }

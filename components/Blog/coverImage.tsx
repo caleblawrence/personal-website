@@ -1,23 +1,25 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable import/no-unresolved */
 import cn from 'classnames';
 import Link from 'next/link';
 
 interface Props {
-  title: string, 
+  title: string,
   src: string,
   slug?: string
 }
 
 const CoverImage = (props: Props) => {
-  const {title, src, slug} = props;
+  const { title, src, slug } = props;
   const image = (
     <img
       src={src}
-      alt={`Cover Image for ${title}`}
+      alt={`${title}`}
       className={cn('shadow-small', {
         'hover:shadow-medium transition-shadow duration-200': slug,
       })}
     />
-  )
+  );
   return (
     <div className="-mx-5 sm:mx-0">
       {slug ? (
@@ -28,7 +30,7 @@ const CoverImage = (props: Props) => {
         image
       )}
     </div>
-  )
-}
+  );
+};
 
 export default CoverImage;

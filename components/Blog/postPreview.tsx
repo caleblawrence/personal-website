@@ -1,6 +1,10 @@
-import Link from 'next/link'
-import CoverImage from './coverImage'
-import Date from './date'
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable react/react-in-jsx-scope */
+/* eslint-disable import/extensions */
+/* eslint-disable react/prop-types */
+import Link from 'next/link';
+import CoverImage from './coverImage';
+import Date from './date';
 
 export default function PostPreview({
   title,
@@ -24,5 +28,5 @@ export default function PostPreview({
       </div>
       <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
     </div>
-  )
+  );
 }

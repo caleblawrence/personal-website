@@ -1,17 +1,21 @@
-import HomeButton from "../HomeButton";
-import SectionTitle from "../sectionTitle";
-import PostPreview from "./postPreview";
+import HomeButton from '../HomeButton';
+import SectionTitle from '../sectionTitle';
+import PostPreview from './postPreview';
 
-export default function BlogPosts({ posts }) {
+interface Props {
+  posts: any[]
+}
+
+export default function BlogPosts(props: Props) {
+  const { posts } = props;
   return (
     <section>
-      {posts.length !== 2 &&
-        <HomeButton />
-      }
+      {posts.length !== 2
+        && <HomeButton />}
 
-      <SectionTitle title={"Blog."} />
+      <SectionTitle title="Blog." />
       <div className="grid grid-cols-1 md:grid-cols-2 md:col-gap-16 lg:col-gap-32 row-gap-20 md:row-gap-32 mb-8">
-        {posts.map(post => (
+        {posts.map((post) => (
           <PostPreview
             key={post.slug}
             title={post.title}

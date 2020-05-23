@@ -1,8 +1,15 @@
-import Date from './date'
-import CoverImage from './coverImage'
-import PostTitle from './postTitle'
+import Date from './date';
+import CoverImage from './coverImage';
+import PostTitle from './postTitle';
 
-export default function PostHeader({ title, coverImage, date }) {
+interface Props {
+  title: string,
+  coverImage: string,
+  date: string;
+}
+
+export default function PostHeader(props: Props) {
+  const { title, coverImage, date } = props;
   return (
     <>
       <PostTitle>{title}</PostTitle>
@@ -15,5 +22,5 @@ export default function PostHeader({ title, coverImage, date }) {
         </div>
       </div>
     </>
-  )
+  );
 }

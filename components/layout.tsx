@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/no-unresolved
 import Meta from 'components/meta';
 
 interface Props {
@@ -5,7 +6,7 @@ interface Props {
   children: any
 }
 export default function Layout(props: Props) {
-  const {preview, children} = props;
+  const { preview, children } = props;
   return (
     <>
       <Meta />
@@ -13,5 +14,5 @@ export default function Layout(props: Props) {
         <main>{children}</main>
       </div>
     </>
-  )
+  );
 }

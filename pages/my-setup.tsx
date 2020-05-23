@@ -1,8 +1,8 @@
-import HomeButton from "components/HomeButton";
-import Layout from "components/layout";
+/* eslint-disable import/no-unresolved */
+import HomeButton from 'components/HomeButton';
+import Layout from 'components/layout';
 
 export default function MySetup() {
-
   return (
     <>
       <Layout>
