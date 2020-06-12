@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/no-unresolved
 import Meta from 'components/meta';
 
 interface Props {

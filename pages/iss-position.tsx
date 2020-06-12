@@ -1,4 +1,3 @@
-/* eslint-disable import/no-unresolved */
 import HomeButton from 'components/HomeButton';
 import Layout from 'components/layout';
 import Meta from 'components/meta';

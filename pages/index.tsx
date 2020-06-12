@@ -1,4 +1,3 @@
-/* eslint-disable import/no-unresolved */
 import BlogPosts from 'components/Blog/blogPosts';
 import Container from 'components/container';
 import Layout from 'components/layout';

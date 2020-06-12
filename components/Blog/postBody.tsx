@@ -1,4 +1,3 @@
-/* eslint-disable react/no-danger */
 import markdownStyles from '../markdown-styles.module.css';
 
 interface Props {

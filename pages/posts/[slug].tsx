@@ -1,4 +1,3 @@
-/* eslint-disable import/no-unresolved */
 import PostBody from 'components/Blog/postBody';
 import PostHeader from 'components/Blog/postHeader';
 import PostTitle from 'components/Blog/postTitle';
