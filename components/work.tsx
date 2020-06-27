@@ -145,15 +145,15 @@ const Work = () => (
             .workDescription {
                 color: white;
                 text-align: center;
-                margin: 0 auto 20px;
+                margin: 0 auto 15px;
                 font-family: Helvetca, Arial, sans-serif;
-                font-size: 1.3em;
+                font-size: 1.2em;
                 margin-top: 15px;
                 max-width: 500px;
-                line-height: 30px;
+                line-height: 25px;
             }
             .workContent {
-                padding: 30px;
+                padding: 20px;
             }
 
             @media only screen and (max-width: 768px) {
