@@ -12,7 +12,7 @@ interface Props {
 export default function Index(props: Props) {
   const { allPosts } = props;
 
-  let firstTwoPosts;
+  let firstTwoPosts: any[];
   if (allPosts.length >= 2) {
     firstTwoPosts = [allPosts[0], allPosts[1]];
   } else {

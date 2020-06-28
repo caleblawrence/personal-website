@@ -1,6 +1,6 @@
 import HomeButton from '../HomeButton';
-import SectionTitle from '../sectionTitle'
-import PostPreview from './postPreview'
+import SectionTitle from '../sectionTitle';
+import PostPreview from './postPreview';
 
 interface Props {
   posts: any[]
