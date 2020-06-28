@@ -2,7 +2,7 @@ import * as React from 'react';
 import SectionTitle from './sectionTitle';
 
 const Work = () => (
-  <div className="mt-10">
+  <div className="mt-10 mb-10">
     <SectionTitle title="Work." />
 
     <div className="twoColumn">

@@ -5,6 +5,7 @@ import SayHello from 'components/sayHello';
 import Work from 'components/work';
 import { getAllPosts } from 'lib/api';
 import Head from 'next/head';
+import ProjectsSummary from '../components/Projects/ProjectsSummary';
 
 interface Props {
   allPosts: any[];
@@ -35,6 +36,7 @@ export default function Index(props: Props) {
           </div>
           {allPosts.length > 0 && <BlogPosts posts={firstTwoPosts} />}
           <Work />
+          <ProjectsSummary />
           <SayHello />
         </Container>
       </Layout>
