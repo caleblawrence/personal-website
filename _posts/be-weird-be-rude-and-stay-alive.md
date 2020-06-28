@@ -9,7 +9,7 @@ ogImage:
   url: '/assets/blog/be-weird-be-rude-and-stay-alive/cover.jpg'
 ---
 
-Recently I've been listening to a lot of true crime podcasts and it's been really interesting. Not really sure why I started. I guess criminal stuff has always been interesting to me. I watch a lot of crime related videos on Liveleak (basically Youtube but you less censorship) and I've always found them fascinating. If the videos didn't make me paranoid enough I now listen to podcasts.
+Recently I've been listening to a lot of true crime podcasts and it's been really interesting. Not really sure why I started. I guess criminal stuff has always been interesting to me. I watch a lot of crime related videos on Liveleak (basically Youtube but less censorship) and I've always found them fascinating. If the videos didn't make me paranoid enough I now listen to podcasts.
 
 The true crimes one I've been listening to recently are [Crime Junkies](https://crimejunkiepodcast.com/) and [Jensen and Holes: The Murder Squad](http://themurdersquad.com/). Both are very interesting. The later seems to be more official as the people that do it both have a background in police work and speak from authority. Crime Junkies is a lot more casual but I love some of the stuff they talk about and the general message they are trying to send. 
 

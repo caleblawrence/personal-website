@@ -11,7 +11,7 @@ export default function ProjectCard(props: Props) {
     title, url, img, description, githubUrl, githubTitle,
   } = props;
   return (
-    <>
+    <div>
       <a href={url} target="_blank" rel="noreferrer">
         <div className="max-w-full rounded overflow-hidden shadow-lg mt-3 mb-3">
           {img && <img className="w-full" src={img} alt="Screenshot" />}
@@ -53,6 +53,6 @@ export default function ProjectCard(props: Props) {
           </div>
         </div>
       </a>
-    </>
+    </div>
   );
 }
