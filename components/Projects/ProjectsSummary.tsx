@@ -9,7 +9,13 @@ export default function ProjectSummary() {
       <p style={{ fontSize: 18, fontWeight: 400, color: '#656565' }}>
         Some small apps I've made.
       </p>
-
+      <ProjectCard
+        title="Oblivious"
+        url="https://oblivious.vercel.app/"
+        description="Follow a few cool people without actually being on Twitter."
+        githubUrl="https://github.com/caleblawrence/oblivious"
+        githubTitle="oblivious"
+      />
       <ProjectCard
         title="Salary Calculator"
         url="http://salary-converter.vercel.app/"
