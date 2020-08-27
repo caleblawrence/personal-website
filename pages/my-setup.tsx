@@ -12,7 +12,7 @@ export default function MySetup() {
         </Head>
         <Container>
           <HomeButton />
-          <img src="/assets/desk.jpg" className="me" alt="me" style={{maxHeight: 1000}} />
+          <img src="/assets/desk.webp" className="me" alt="me" style={{maxHeight: 1000}} />
         </Container>
       </Layout>
     </>
