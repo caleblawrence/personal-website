@@ -26,7 +26,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 ul {
-  list-style: circle;
+  list-style-type: square;
+  text-align: -webkit-match-parent;
 }
 
 pre {
