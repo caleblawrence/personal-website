@@ -16,7 +16,6 @@ export default function HomeButton() {
                 margin-bottom: 20px;
                 font-size: 20px
             }
-
         `}
         </style>
       </h3>
