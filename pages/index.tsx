@@ -6,7 +6,7 @@ import Work from 'components/work';
 import { getAllPosts } from 'lib/api';
 import Head from 'next/head';
 import ProjectsSummary from '../components/projects/projectsSummary';
-import Nav from 'components/nav';
+import Nav from 'components/nav'; 
 
 interface Props {
   allPosts: any[];
