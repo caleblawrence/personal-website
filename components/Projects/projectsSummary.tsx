@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import SectionTitle from 'components/sectionTitle';
-import ProjectCard from 'components/projects/projectCard';
+import ProjectCard from 'components/Projects/projectCard';
 
 export default function ProjectSummary() {
   return (
