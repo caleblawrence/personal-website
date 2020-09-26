@@ -3,7 +3,7 @@ import Layout from 'components/layout';
 import Head from 'next/head';
 import HomeButton from 'components/homeButton';
 import SectionTitle from 'components/sectionTitle';
-import ProjectCard from 'components/projects/projectCard';
+import ProjectCard from 'components/Projects/projectCard';
 
 export default function Projects() {
   return (
