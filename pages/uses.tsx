@@ -2,7 +2,7 @@
 import Container from 'components/container';
 import Layout from 'components/layout';
 import Head from 'next/head';
-import HomeButton from '../components/HomeButton';
+import HomeButton from '../components/homeButton';
 import SectionTitle from '../components/sectionTitle';
 
 export default function Index() {
@@ -19,7 +19,19 @@ export default function Index() {
             style={{ fontFamily: 'Helvetca, Arial, sans-serif' }}>
             Uses
           </h1>
-          <p>All tools below are free to use unless I mention otherwise (at least the basic tier is - which is all I have needed).</p>
+          <img
+            src="/assets/desk.webp"
+            className="me"
+            alt="me"
+            style={{ maxHeight: 600 }}
+          />
+
+          <br/>
+          
+          <p>
+            All tools below are free to use unless I mention otherwise (at least
+            the basic tier is - which is all I have needed).
+          </p>
           <h2
             className="mb-0 mt-4 text-4xl md:text-3xl font-bold tracking-tighter leading-tight"
             style={{ fontFamily: 'Helvetca, Arial, sans-serif' }}>
@@ -43,7 +55,8 @@ export default function Index() {
             </li>
             <li>
               I use <a href="https://www.iterm2.com/">iTerm2</a> for my
-              terminal. The "Minimal" theme makes it look great. I've used Hyper before too but it seems to use a lot of memory.
+              terminal. The "Minimal" theme makes it look great. I've used Hyper
+              before too but it seems to use a lot of memory.
             </li>
           </ul>
 
@@ -57,7 +70,8 @@ export default function Index() {
               <a href="https://www.google.com/chrome/canary/">
                 Google Chrome Canary
               </a>{' '}
-              is my browser of choice. It's just the nighly build of Google Chrome.
+              is my browser of choice. It's just the nighly build of Google
+              Chrome.
             </li>
             <li>
               <a href="https://www.notion.so">Notion</a> is is great for
@@ -72,8 +86,8 @@ export default function Index() {
             </li>
             <li>
               <a href="https://www.gitkraken.com/">GitKraken</a> is a fantastic
-              tool for Git. It lets you easily see what you've
-              changed and do anything Git related. It also looks great.
+              tool for Git. It lets you easily see what you've changed and do
+              anything Git related. It also looks great.
             </li>
             <li>
               <a href="https://todoist.com/">Todoist</a> is awesome for tracking

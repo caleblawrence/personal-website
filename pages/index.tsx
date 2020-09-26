@@ -1,11 +1,12 @@
-import BlogPosts from 'components/Blog/blogPosts';
+import BlogPosts from 'components/blog/blogPosts';
 import Container from 'components/container';
 import Layout from 'components/layout';
 import SayHello from 'components/sayHello';
 import Work from 'components/work';
 import { getAllPosts } from 'lib/api';
 import Head from 'next/head';
-import ProjectsSummary from '../components/Projects/ProjectsSummary';
+import ProjectsSummary from '../components/projects/projectsSummary';
+import Nav from 'components/nav';
 
 interface Props {
   allPosts: any[];
@@ -38,6 +39,7 @@ export default function Index(props: Props) {
           <Work />
           <ProjectsSummary />
           <SayHello />
+          <Nav />
         </Container>
       </Layout>
       <style jsx>

@@ -1,8 +1,8 @@
-import PostBody from 'components/Blog/postBody';
-import PostHeader from 'components/Blog/postHeader';
-import PostTitle from 'components/Blog/postTitle';
+import PostBody from 'components/blog/postBody';
+import PostHeader from 'components/blog/postHeader';
+import PostTitle from 'components/blog/postTitle';
 import Container from 'components/container';
-import HomeButton from 'components/HomeButton';
+import HomeButton from 'components/homeButton';
 import Layout from 'components/layout';
 import { getAllPosts, getPostBySlug } from 'lib/api';
 import markdownToHtml from 'lib/markdownToHtml';

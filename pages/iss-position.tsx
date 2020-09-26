@@ -1,4 +1,4 @@
-import HomeButton from 'components/HomeButton';
+import HomeButton from 'components/homeButton';
 import Layout from 'components/layout';
 import Meta from 'components/meta';
 import Head from 'next/head';

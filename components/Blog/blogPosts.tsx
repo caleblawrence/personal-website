@@ -1,4 +1,4 @@
-import HomeButton from '../HomeButton';
+import HomeButton from '../homeButton';
 import SectionTitle from '../sectionTitle';
 import PostPreview from './postPreview';
 

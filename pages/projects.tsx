@@ -1,9 +1,9 @@
 import Container from 'components/container';
 import Layout from 'components/layout';
 import Head from 'next/head';
-import HomeButton from 'components/HomeButton';
+import HomeButton from 'components/homeButton';
 import SectionTitle from 'components/sectionTitle';
-import ProjectCard from 'components/Projects/ProjectCard';
+import ProjectCard from 'components/projects/projectCard';
 
 export default function Projects() {
   return (
