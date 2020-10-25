@@ -20,14 +20,14 @@ export default function Index() {
             Uses
           </h1>
           <img
-            src="/assets/desk.webp"
+            src="/assets/desk.jpg"
             className="me"
             alt="me"
             style={{ maxHeight: 600 }}
           />
 
-          <br/>
-          
+          <br />
+
           <p>
             All tools below are free to use unless I mention otherwise (at least
             the basic tier is - which is all I have needed).
