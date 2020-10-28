@@ -9,6 +9,13 @@ export default function ProjectSummary() {
       <p style={{ fontSize: 18, fontWeight: 400, color: '#656565' }}>
         Some small apps I've made.
       </p>
+       <ProjectCard
+        title="Quit League Helper"
+        url="https://quit-league-helper.vercel.app/"
+        description="A tool helps you take a break from League of Legends (a video game). It automatically checks to see if you're playing the game allows you to compete with your friends for the longest streak (days without playing)."
+        githubUrl="https://github.com/caleblawrence/quit-league-helper"
+        githubTitle="quit-league-helper"
+      />
       <ProjectCard
         title="Oblivious"
         url="https://oblivious.vercel.app/"

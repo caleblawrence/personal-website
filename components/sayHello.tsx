@@ -1,5 +1,5 @@
-import * as React from 'react';
 import SectionTitle from './sectionTitle';
+import Image from 'next/image'
 
 const SayHello = () => (
   <div className="mt-10">
@@ -35,7 +35,12 @@ const SayHello = () => (
       </div>
 
       <div className="profilePicture">
-        <img src="/assets/images/me.jpg" className="me" alt="me" />
+        <Image
+          src="/assets/images/me.jpg"
+          className="me"
+          alt="Picture of the author"
+          unsized
+        />
       </div>
     </div>
 
