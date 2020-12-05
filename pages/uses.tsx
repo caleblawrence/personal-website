@@ -1,9 +1,8 @@
-/* eslint-disable react/jsx-one-expression-per-line */
 import Container from 'components/container';
 import Layout from 'components/layout';
 import Head from 'next/head';
 import HomeButton from '../components/homeButton';
-import SectionTitle from '../components/sectionTitle';
+import Image from 'next/image';
 
 export default function Index() {
   return (
@@ -19,12 +18,7 @@ export default function Index() {
             style={{ fontFamily: 'Helvetca, Arial, sans-serif' }}>
             Uses
           </h1>
-          <img
-            src="/assets/desk.jpg"
-            className="me"
-            alt="me"
-            style={{ maxHeight: 600 }}
-          />
+          <Image src="/assets/desk.jpg" height={750} width={1000} priority />
 
           <br />
 

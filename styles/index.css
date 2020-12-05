@@ -37,3 +37,9 @@ pre {
   white-space: -o-pre-wrap !important; /* Opera 7 */
   word-wrap: break-word !important; /* Internet Explorer 5.5+ */
 }
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px !important;
+  }
+}
