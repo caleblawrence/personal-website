@@ -6,13 +6,8 @@ const SayHello = () => (
     <SectionTitle title="Say Hello." />
     <div className="content">
       <div className="helloBox">
-        <a
-          className="email"
-          href="mailto:lawrence.calebc@gmail.com"
-          target="_blank"
-          rel="noreferrer">
-          lawrence.calebc@gmail.com
-        </a>
+        <p className="email">lawrence.calebc</p>
+        <p className="email2">@gmail.com</p>
         <div className="divider" />
         <p className="summary">
           I love to write code at coffee shops, train with firearms, write on my
@@ -77,7 +72,7 @@ const SayHello = () => (
         .email {
           margin: 0;
           padding: 0;
-          font-size: 2rem;
+          font-size: 3rem;
           font-family: normal 16px/1.9em 'Inter', 'Source Sans Pro',
             'Helvetica Neue', Arial, sans-serif;
           text-decoration: none;
@@ -86,6 +81,16 @@ const SayHello = () => (
           overflow-wrap: break-word;
           word-wrap: break-word;
           word-break: break-word;
+        }
+
+        .email2 {
+          margin: 0;
+          padding: 0;
+          font-size: 2rem;
+          font-family: normal 16px/1.9em 'Inter', 'Source Sans Pro',
+            'Helvetica Neue', Arial, sans-serif;
+          text-decoration: none;
+          color: black;
         }
 
         .email:hover {
@@ -120,12 +125,20 @@ const SayHello = () => (
             font-size: 2rem;
           }
 
+          .email2 {
+            font-size: 1.8rem;
+          }
+
           .profilePicture {
             flex: 1;
           }
 
           .content {
             flex-direction: column;
+          }
+
+          .summary {
+            max-width: 90%;
           }
         }
       `}
