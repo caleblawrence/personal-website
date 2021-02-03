@@ -16,8 +16,8 @@ export default function Container(props) {
   const { children, ...customMeta } = props;
   const router = useRouter();
   const meta = {
-    title: 'Caleb Lawrence – Developer, writer, creator.',
-    description: `Front-end developer, JavaScript enthusiast, and course creator.`,
+    title: 'Caleb Lawrence',
+    description: ``,
     image: 'https://caleblawrence.dev/static/me.jpg',
     type: 'website',
     ...customMeta
