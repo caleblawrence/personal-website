@@ -1,6 +1,8 @@
-# Caleb Lawrence Personal Website
+# caleblawrence.dev
 
+## Built Using
 
-A lot of the blog stuff was copied directly from the official `blog-starter` example in the Next.js repo. 
-https://github.com/zeit/next.js/tree/canary/examples/blog-starter
-
+- [Next.js](https://nextjs.org/)
+- [Vercel](https://vercel.com)
+- [MDX](https://github.com/mdx-js/mdx)
+- [Tailwind CSS](https://tailwindcss.com/)
