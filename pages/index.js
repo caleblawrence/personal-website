@@ -44,7 +44,7 @@ export default function Home({ posts }) {
         />
         <ProjectCard
           title="Oblivious"
-          description="Follow a few cool people without actually being on Twitter. This tool allows you to have a cusotm list of people added to a feed that is free of comments, like, trending, etc. Just the posts."
+          description="Follow a few cool people without actually being on Twitter. This tool allows you to have a custom list of people added to a feed that is free of comments, likes, trending, etc. Just the posts."
           href="https://oblivious.vercel.app/"
           githubTitle="oblivious"
         />
