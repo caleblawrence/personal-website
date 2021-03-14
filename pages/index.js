@@ -37,6 +37,12 @@ export default function Home({ posts }) {
           Projects
         </h3>
         <ProjectCard
+          title="Your Village (Work In Progress)"
+          description="App that helps you find babysitters from a list of close friend (like family, friends, community group etc)."
+          href="https://your-village.vercel.app/"
+          githubTitle="your-village"
+        />
+        <ProjectCard
           title="Quit League"
           description="A tool helps you take a break from League of Legends (a video game). It automatically checks to see if you're playing the game allows you to compete with your friends for the longest streak (days without playing)."
           href="https://quit-league-helper.vercel.app/"
