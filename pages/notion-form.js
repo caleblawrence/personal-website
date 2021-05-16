@@ -33,8 +33,8 @@ export default function NotionForm() {
           Notion Form
         </h1>
         <p className={'text-black dark:text-white'}>
-          This is a for fun page I made that adds to a notion database when you
-          fill out form and click submit.
+          This is a for fun page I made that adds to a Notion database when you
+          fill out form and click submit. I wanted to try out the Notion API.
         </p>
         <div className="relative w-full mb-4 mt-4">
           <input
