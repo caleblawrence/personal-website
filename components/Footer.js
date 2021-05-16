@@ -44,6 +44,13 @@ export default function Footer() {
             <a className="text-gray-500 hover:text-gray-600 transition">Uses</a>
           </Link>
         </div>
+        <div className="flex flex-col space-y-4">
+          <Link href="/notion-form">
+            <a className="text-gray-500 hover:text-gray-600 transition">
+              Notion Form
+            </a>
+          </Link>
+        </div>
       </div>
     </footer>
   );
