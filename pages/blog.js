@@ -1,8 +1,8 @@
 import { useState } from 'react';
 
-import Container from '@/components/Container';
-import BlogPost from '@/components/BlogPost';
-import { getAllFilesFrontMatter } from '@/lib/mdx';
+import Container from '../components/Container';
+import BlogPost from '../components/BlogPost';
+import { getAllFilesFrontMatter } from '../lib/mdx';
 
 export default function Blog({ posts }) {
   const [searchValue, setSearchValue] = useState('');

@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { parseISO, format } from 'date-fns';
 
-import Container from '@/components/Container';
+import Container from '../components/Container';
 
 export default function BlogLayout({ children, frontMatter }) {
   return (

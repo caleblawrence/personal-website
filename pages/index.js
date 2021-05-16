@@ -1,7 +1,7 @@
 import Container from '../components/Container';
 import BlogPost from '../components/BlogPost';
 import ProjectCard from '../components/ProjectCard';
-import { getAllFilesFrontMatter } from '@/lib/mdx';
+import { getAllFilesFrontMatter } from '../lib/mdx';
 import { useState } from 'react';
 
 export default function Home({ posts }) {
@@ -28,6 +28,7 @@ export default function Home({ posts }) {
         </h3>
         {lastBlogPosts.map((post) => (
           <BlogPost
+            key={post.title}
             title={post.title}
             summary={post.summary}
             slug={post.slug}

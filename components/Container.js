@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
 import NextLink from 'next/link';
 
-import Footer from '@/components/Footer';
+import Footer from '../components/Footer';
 
 export default function Container(props) {
   const [mounted, setMounted] = useState(false);
