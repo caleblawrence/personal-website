@@ -32,7 +32,7 @@ export default function NotionForm() {
         <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-4 text-black dark:text-white">
           Notion Form
         </h1>
-        <p style={{ color: 'white' }}>
+        <p className={'text-black dark:text-white'}>
           This is a for fun page I made that adds to a notion database when you
           fill out form and click submit.
         </p>
