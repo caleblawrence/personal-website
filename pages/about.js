@@ -1,6 +1,6 @@
-import Link from 'next/link';
 import Image from 'next/image';
 import Container from '../components/Container';
+import me from '../public/me.jpeg';
 
 export default function About() {
   return (
@@ -13,10 +13,10 @@ export default function About() {
           <div className="centerImage">
             <Image
               alt={`Me`}
-              src={`/me.jpg`}
+              src={me}
               width={550}
               height={500}
-              priority
+              placeholder="blur"
             />
           </div>
           <p>
